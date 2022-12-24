@@ -52,7 +52,7 @@ function FeedbackForm() {
         if(feedbackEdit.edit === true){
           updateFeedback(feedbackEdit.item.id,newFeedback)
         } else {
-        addFeedback(newFeedback) }
+        addFeedback(newFeedback)}
     
         console.log(newFeedback)
         setText('')
@@ -60,7 +60,7 @@ function FeedbackForm() {
   }
 
   return (
-        <Card>
+        <Card >
         <form onSubmit={handleSubmit}>
             <h2>how would you rate your service with us ?</h2>
             <RatingSelect select={(rating)=>{setRating(rating)}}/>
